@@ -1,6 +1,6 @@
-#+STARTUP: showall hidestars
+#+STARTUP: hidestars align shrink
 #+TITLE: lcthw
-
+#+OPTIONS: toc:2 num:nil ^:nil
 
 * This Book Is Not Really About C
   本书不是教你 C 编程的. 你将会学习用 C 写程序, 但更重要的是学习严格的
@@ -27,7 +27,7 @@
   我不想告诉你这些把你吓跑, 因为我计划把这本书变得非常有趣, 简单和
   devious. 我会给你一些其他编程语言可能做不到的项目, 让你学习 C 变得有
   趣. 我将通过使用我已经证明的练习模式使这本书变得简单, 这些练习让你慢
-  慢地进行 C 语言编程和培养你的技能. 我会教你如何破会和保护你的代码,
+  慢地进行 C 语言编程和培养你的技能. 我会教你如何破坏和保护你的代码,
   这样你就明白为什么这些问题很重要了, 这会让其变得复杂. 你将学习如何导
   致堆栈溢出, 非法内存访问和其他困扰 C 程序的常见缺陷, 以便了解你所面
   临的问题.
@@ -153,3 +153,130 @@
   programming languages use the C way of formatting output, so let's
   try it:
 ** What You Should See
+* Exercise 4. Using a Debugger
+** GDB Tricks
+** GDB Quick Reference
+** LLDB Quick Reference
+* Exercise 5. Memorizing C Operators
+** How to Memorize
+** The List Of Operators
+   - Arithmetic Operators
+     | Operator | Description |
+     |----------+-------------|
+     | +        | Add         |
+     | -        | Subtrance   |
+     | *        | Multiply    |
+     | /        | Divide      |
+     | %        | Modulus     |
+     | ++       | Increment   |
+     | --       | Decrement   |
+   - Relational Operators
+     | Operator | Description        |
+     |----------+--------------------|
+     | ==       | Equal              |
+     | !=       | Not equal          |
+     | >        | Greater than       |
+     | <        | less than          |
+     | >=       | Greater than equal |
+     | <=       | Less than equal    |
+   - Logical Operators
+     | Operator   | Description     |
+     |------------+-----------------|
+     | &&         | Logical and     |
+     | \vert\vert | Logical or      |
+     | !          | Logical not     |
+     | ?:         | Logical ternary |
+   - Bitwise Operators
+     | Operator | Description              |
+     |----------+--------------------------|
+     | &        | Bitwise and              |
+     | \vert    | Bitwise or               |
+     | ^        | Bitwise xor              |
+     | ~        | Bitwise one's complement |
+     | <<       | Bitwise shift left       |
+     | >>       | Bitwise shift right      |
+   - Assignment Operators
+     | Operator | Description              |
+     |----------+--------------------------|
+     | =        | Assign equal             |
+     | +=       | Assign plus-equal        |
+     | -=       | Assign minus-equal       |
+     | *=       | Assign multiply-equal    |
+     | /=       | Assign divide-equal      |
+     | %=       | Assign modulus-equal     |
+     | <<=      | Assign shift-left-equal  |
+     | >>=      | Assign shift-right-equal |
+     | &=       | Assign and-equal         |
+     | ^=       | Assign xor-equal         |
+     | \vert=   | Assign or-equal          |
+   - Data Operators
+     | Operator | Description           |
+     |----------+-----------------------|
+     | sizeof() | Get the size of       |
+     | []       | Array subscript       |
+     | &        | The address of        |
+     | *        | The value of          |
+     | ->       | Structure dereference |
+     | .        | Structure reference   |
+   - Miscellaneous Operators
+     | Operator | Description               |
+     |----------+---------------------------|
+     | ,        | Comma                     |
+     | ()       | Parentheses               |
+     | {}       | Braces                    |
+     | :        | Colon                     |
+     | //       | Single-line comment start |
+     | /*       | Multi-line comment start  |
+     | */       | Multi-line comment end    |
+
+* Exercise 6. Memorizing C Syntax
+** The Keywords
+   | Operator | Description                                     |
+   |----------+-------------------------------------------------|
+   | auto     | Give a local variable a local lifetime.         |
+   | break    | Exit out of a compound statement.               |
+   | case     | A branch in a switch-statement.                 |
+   | char     | Character data type.                            |
+   | const    | Make a variable unmodifiable.                   |
+   | continue | Continue to the top of a loop.                  |
+   | default  | Default branch in a switch-statement.           |
+   | do       | Start a do-while loop.                          |
+   | double   | A double floating-point data type.              |
+   | else     | An else branch of an if-statement.              |
+   | enum     | Define a set of int constants.                  |
+   | extern   | Declare an identifier is defined externally.    |
+   | float    | A floating-point data type.                     |
+   | for      | Start a for-loop.                               |
+   | goto     | Jump to a label.                                |
+   | if       | Start an if-statement.                          |
+   | int      | An integer data type.                           |
+   | long     | A long integer data type.                       |
+   | register | Declare a variable be stored in a CPU register  |
+   | return   | Return from a function.                         |
+   | short    | A short integer data type.                      |
+   | signed   | A signed modifier for integer data type.        |
+   | sizeof   | Determine the size of data.                     |
+   | static   | Preserve variable value after its scope exits.  |
+   | struct   | Combine variables into a single record.         |
+   | switch   | Start a switch-statement.                       |
+   | typedef  | Create a new type.                              |
+   | union    | Start a union-statement.                        |
+   | unsigned | An unsigned modifier for integer data type.     |
+   | void     | Declare a data type empty.                      |
+   | volatile | Declare a variable might be modified elsewhere. |
+   | while    | Start a while-loop.                             |
+** Syntax Structures
+   - if-statement
+     #+begin_quote
+     
+     #+end_quote
+** A Word of Encouragement
+** A Word of Warning
+   
+* Exercise 7. Variables And Types
+* footnotes
+
+  To insert a vertical bar into a table filed, use '\vert' or, inside a
+  word 'abc\vert{}def'.
+
+  C-c C-x \ (org-toggle-pretty-entities)

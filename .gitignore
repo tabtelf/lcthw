@@ -52,3 +52,5 @@ Mkfile.old
 dkms.conf
 *~
 learn-c-the-hard-way-lectures/
+\#*#
+*.html
